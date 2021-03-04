@@ -7,6 +7,7 @@ using Microsoft.Extensions.Logging;
 namespace BackgroundTask.Demo.Controllers
 {
     [ApiController]
+    [Route("")]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
