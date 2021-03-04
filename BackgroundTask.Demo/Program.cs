@@ -15,7 +15,7 @@ namespace BackgroundTask.Demo
                 .MinimumLevel.Debug()
                 .MinimumLevel.Override("Microsoft", LogEventLevel.Warning)
                 .Enrich.FromLogContext()
-                .WriteTo.File(@"./App_Data/LogFile.txt")
+                .WriteTo.File(@"./LogFile.txt")
                 .CreateLogger();
 
             try 

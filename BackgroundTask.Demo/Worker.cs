@@ -1,4 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
+using System;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -20,6 +21,7 @@ namespace BackgroundTask.Demo
             {
                 Interlocked.Increment(ref number);
                 logger.LogInformation($"Worker printing number: {number}");
+                Console.Out.WriteLine($"Worker printing number: {number}");
                 await Task.Delay(1000 * 5);
             }
         }
